@@ -11,7 +11,7 @@
 # /  Last updated: March 2023             /
 # /***************************************/
 # 
-# This project is licensed under the terms of the
+# This project is licensed under the terms of the CC BY 4.0
 # Creative Commons Attribution 4.0 International license.
 # 
 #
