@@ -1,4 +1,4 @@
-## AOPN Generation based on data from AOPWiki v2.5
+## AOPN Generation based on data from AOPWiki v2.6
 
 This project is licensed under the terms of the Creative Commons Attribution 4.0 International license.
 
