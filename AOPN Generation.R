@@ -1,6 +1,6 @@
 #
 # /***************************************/
-# /  AOPWiki v2.5 data processing         /
+# /  AOPWiki v2.6 data processing         /
 # /  for AOP network generation           /
 # /                                       /
 # /                                       /
@@ -8,7 +8,7 @@
 # /  Institute of Environmental Medicine  /
 # /  Karolinska Institutet, Sweden        /
 # /                                       /
-# /  Last updated: March 2023             /
+# /  Last updated: June 2023              /
 # /***************************************/
 # 
 # This project is licensed under the terms of the CC BY 4.0
@@ -217,13 +217,11 @@ joined_table<-merge(data.frame(joined_table, row.names=NULL), data.frame(df_kec[
 joined_table<-joined_table[!duplicated(joined_table), ]
 
 
-# Save the joined table as a semicolon (;) separated file that can be imported into Cytoscape!
-write.table(joined_table, file = "Table.csv", row.names = FALSE, sep = ";", quote = FALSE)
+# Save the joined table as a tab (\t) separated file that can be imported into Cytoscape!
+write.table(joined_table, file = "Table.tsv", row.names = FALSE, sep = "\t", quote = FALSE)
 
 # Or save the joined table as an excel file that can be imported into Cytoscape!
 #write_xlsx(joined_table, "./Table.xlsx")
 
-# In the Cytoscape software, after choosing "Import->Network from file" make sure
-# to enter the advanced options and set the delimiter to semicolon (;) ONLY.
 # The "Event" Column is the Source node and the "Target" column is the Target node.
-# Adjacency is the interaction type. 
+
