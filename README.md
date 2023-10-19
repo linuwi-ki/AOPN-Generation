@@ -15,7 +15,7 @@ Cytoscape (https://cytoscape.org/) is a freely available software, and is used t
 ##### Important to note when importing the file to Cytoscape:
 To import the file, choose File->Import->Network from File... and select the R-script output file.
 
-Open the Advanced Options, **deselect** the ", (comma)" delimiter, and **select** only the "; (semicolon)" delimiter. Press OK.
+Open the Advanced Options, **deselect** the ", (comma)" delimiter, and **select** only the "; (semicolon)" delimiter. Press OK. (**NOTE: The current script saves the file as a tab-separated file which is automatically detected by Cytoscape. This step is not required unless you manually change the delimiter in R.**)
 
 The columns that have to be edited to create a functioning network are the "Event" and "Target" columns.
 The Event column should have the meaning "Source node" and the Target column should have the "Target Node" meaning. This will create a functioning network, however the visualization options for the related parameters will be limited. 
